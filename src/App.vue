@@ -46,20 +46,20 @@ export default {
       {
         id: 0,
         wyrQuestion: '...have edible spaghetti hair that regrows every night or sweat (not sweet) maple syrup?',
-        wyrAnswer1: 'Spaghetti hair',
-        wyrAnswer2: 'Maple sweat',
+        wyrAnswer1: 'Spaghetti Hair',
+        wyrAnswer2: 'Maple Sweat',
       },
       {
         id: 1,
         wyrQuestion: '...be a reverse centaur or a reverse mermaid/merman?',
-        wyrAnswer1: 'Reverse centaur',
-        wyrAnswer2: 'Reverse mermaid/merman',
+        wyrAnswer1: 'Reverse Centaur',
+        wyrAnswer2: 'Reverse Mermaid/Merman',
       },
       {
         id: 2,
         wyrQuestion: '...have to fart loudly every time you have a serious conversation or have to burp after every kiss?',
-        wyrAnswer1: 'Farty conversation',
-        wyrAnswer2: 'Burpy kiss',
+        wyrAnswer1: 'Farty Conversation',
+        wyrAnswer2: 'Burpy Kiss',
       },
       
 
