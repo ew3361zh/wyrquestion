@@ -1,11 +1,17 @@
 <template>
+<!-- wyr div displays the questions in 3 separate elements since there are three
+of them in the App.vue data and App.vue v-for loops through the questions array -->
   <div class="wyr">
     <h2>Would you rather...</h2>
     <h3>{{question}}</h3>
+    <!-- v-bind value of answer1 and answer2 for each question from the questions array from app.vue -->
     <input type="radio" v-model="choice" 
     v-bind:value="answer1"
     v-on:change="choiceMade">
     <label> {{answer1}} </label>
+    <!-- v-model choice for radio buttons to make sure only one is selected and v-bind
+    the value. Also using the v-on:change with the choiceMade method to send selection
+    changes to app.vue for its use -->
     <input type="radio" v-model="choice" 
     v-bind:value="answer2" 
     v-on:change="choiceMade">
@@ -29,8 +35,9 @@ export default {
     }
   },
   methods: {
-    choiceMade(choice) {
-      this.$emit('answer-changed', choice)
+    choiceMade() {
+      // sending the choice made for each particular question back to app.vue for its use there
+      this.$emit('answer-changed', this.choice)
     }
   }
 }
@@ -43,8 +50,9 @@ h3 {
 }
 
 .wyr {
-  border: 5px hotpink double;
-  background-color: lightskyblue;
-  margin: 15px
+  border: 5px darkolivegreen dotted;
+  background-color: honeydew;
+  margin: 15px;
+  padding:5px;
 }
 </style>
